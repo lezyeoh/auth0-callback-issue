@@ -1,0 +1,70 @@
+<a id="logo-main" href="/#/"><span class="logo-sport">SPORT</span><span class="logo-anatics">ANATICS</span></a>
+<nav class="navbar navbar-default publicnav" ng-if="!toolbar.scheduleState">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="welcome.home">HOME</a></li>
+        <li><a ui-sref="welcome.about">ABOUT</a></li>
+        <!--<li><a ui-sref="welcome.sports">EVENTS</a></li>-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SPORTS <span class="caret"></span></a>
+          <ul class="dropdown-menu sport-menu">
+            <!--<li ng-repeat="sport in toolbar.sports"><a ui-sref="welcome.sports({id:sport.url})" ng-bind="sport.name"></a></li>-->
+            <li ng-repeat="sport in toolbar.sports"><a ui-sref="search({id:sport.name})" ng-bind="sport.name"></a></li>
+          </ul>
+        </li>
+        <li><a ui-sref="welcome.events({id:''})">EVENTS</a></li>
+        <li><a ui-sref="welcome.venues">VENUES</a></li>
+        <li><a ui-sref="welcome.contact">CONTACT</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a ui-sref="welcome.contact">SPORTS</a></li>-->
+        <!--<li><a ng-hide="vm.user.email" ui-sref="welcome.login" class="login">LOGIN</a>-->
+        <!--  <a ng-show="vm.user.email" ui-sref="welcome.logout" class="logout">LOGOUT</a></li>-->
+        
+        <li class="dropdown" ng-if="isAuthenticated && toolbar.isAdmin">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PDF <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="home.venues">Venues</a></li>
+            <li><a ui-sref="home.rawdatacrawler">Pull In New Data</a></li>
+            <li><a ui-sref="home.rawdatamatcher">Create Events (Matcher)</a></li>
+            <li><a ui-sref="home.rawdata">Raw Data</a></li>
+            <li><a ui-sref="home.settings">Ignored Terms</a></li>
+            <li><a ui-sref="home.termsmatcher">Terms Matcher</a></li>
+          </ul>
+        </li>
+        <li ng-if="!isAuthenticated"><a ng-click="toolbar.login()" href="">LOG IN</a></li>
+        <li ng-if="isAuthenticated" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          MENU<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu sport-menu">
+            <li ng-repeat="sport in vm.sports"><a ui-sref="welcome.sports({id:sport.url})" ng-bind="sport.name"></a></li>
+            <li><a ui-sref="profile">MY PROFILE</a></li>
+            <li ng-if="isAuthenticated"><a ng-click="toolbar.logout()" href="">LOGOUT</a></li>
+            
+            <li class="divider" ng-if="toolbar.userVenues"></li>
+            <li ng-repeat="venue in toolbar.userVenues"><a ui-sref="home.venues({id:venue.url})" ng-bind="venue.name"></a></li>
+            
+            <li class="divider" ng-if="isAuthenticated && toolbar.isAdmin"></li>
+            <li ng-if="isAuthenticated && toolbar.isAdmin"><a ui-sref="home.sports">Sports</a></li>
+            <li ng-if="isAuthenticated && toolbar.isAdmin"><a ui-sref="home.leagues">Leagues</a></li>
+            <li ng-if="isAuthenticated && toolbar.isAdmin"><a ui-sref="home.teams">Teams</a></li>
+            <li ng-if="isAuthenticated && toolbar.isAdmin"><a ui-sref="home.channels">Channels</a></li>
+            <li ng-if="isAuthenticated && toolbar.isAdmin"><a ui-sref="home.events">Events</a></li>
+            <li ng-if="isAuthenticated && toolbar.isAdmin"><a ui-sref="home.images">Images</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
