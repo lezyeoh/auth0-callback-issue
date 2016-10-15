@@ -1,0 +1,5 @@
+<div class="alert alert-{{alert.type}} animated main-alert" ng-cloak
+     ng-class="{'bounceIn': alert.show, 'bounceOut': !alert.show, 'alert-hidden': !alert.isShown}">
+  <strong ng-bind="alert.title"></strong>
+  <span ng-bind="alert.message"></span>
+</div>

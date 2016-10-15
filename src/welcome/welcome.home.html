@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row text-center">
+    <h2>UPCOMING EVENTS</h2>
+    <div class="hidden-xs col-md-12 text-center">
+      <spinner name="upcomingSpinner" img-src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" show="true"></spinner>
+      <slick settings="vm.slickConfig" ng-if="vm.upcomingEvents">
+        <div ng-repeat="event in vm.upcomingEvents" ui-view="upcoming"></div>
+      </slick>
+    </div>
+    <div class="hidden-md hidden-sm hidden-lg text-center">
+      <div class="col-xs-12" ng-repeat="event in vm.upcomingEvents" ui-view="upcoming"></div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <h2>POPULAR EVENTS</h2>
+    <div class="hidden-xs col-md-12 text-center">
+      <spinner name="popularSpinner" img-src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" show="true"></spinner>
+      <slick settings="vm.slickConfig" ng-if="vm.popularEvents">
+        <div ng-repeat="event in vm.popularEvents" ui-view="popular"></div>
+      </slick>
+    </div>
+    <div class="hidden-md hidden-sm hidden-lg text-center">
+      <div class="col-xs-12" ng-repeat="event in vm.popularEvents" ui-view="popular"></div>
+    </div>
+  </div>
+</div>

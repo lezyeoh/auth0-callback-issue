@@ -1,0 +1,185 @@
+@import '../common/colors.base';
+
+.banner {
+    padding: 0px;
+    height: 340px;
+    background-image: url("https://s3-ap-southeast-2.amazonaws.com/sportanatics/banner1.jpg");
+}
+
+header[role="banner"] {
+  #logo-main {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+// .publicnav {
+//   background: transparent;
+//   border: none;
+//   .navbar-nav { 
+//     width: 100%;
+//     text-align: center;
+//     > li {
+//       display: inline-block;
+//       float: none;
+//       > a {
+//         padding-left: 30px;
+//         padding-right: 30px;
+//         }
+//     }
+//   }
+// }
+
+.container  .img-responsive {
+    display: block;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.eventName {
+    color: $primaryLinkTextColor;
+    font-size: 16px;
+    min-height: 45px;
+}
+
+.footer {
+    background-color: $primaryBackgroundColor;
+    min-height: 200px;
+    color: #ffffff;
+}
+
+.footer h2 {
+    color: #ffffff;
+}
+
+.vcenter {
+    margin-top:140px;
+    height: 150px;
+}
+
+nav.publicnav {
+  background: #FCFCFC;
+  min-height: 50px;
+  height: 50px;
+//   line-height: 75px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -157px !important;  /* 50% of your logo width */
+    display: block;
+}
+  
+.cust-nav .navbar-brand, #logo-main, .cust-nav .navbar-nav>li>a{
+  color: $textPrimaryColor;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: $fourthColor;
+    color: $textPrimaryColor;
+    border-color: $primaryBackgroundHoverColor;
+    text-decoration: none;
+}
+
+.navbar {
+  border-color: $primaryBackgroundColor;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border: 0;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: $textPrimaryColor;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $textPrimaryColor;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.search {
+    height:50px;
+}
+
+span.logo-sport, span.logo-anatics{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+span.logo-sport {
+    color: $secondColor;
+}
+
+span.logo-anatics {
+    color: $fourthColor;
+}
+
+ul.nav, ul.nav li a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+ul.nav, ul.nav li{
+    min-height: 50px;
+}
+
+.nav {
+    font-size: 17px;
+}
+
+.navbar-default .navbar-nav>li>a.login {
+    color: $fourthColor;
+}
+
+.navbar-default .navbar-nav > li > a.login:hover, .navbar-default .navbar-nav > li > a.login:focus {
+    background-color: $secondColor;
+    color: $fourthColor;
+    border-color: $secondColor;
+}
+
+#mynav a, #mynav a:hover, #mynav a:focus {
+    text-decoration: none;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: $firstColor;
+  //background: #000;
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+}
+
+.slick-prev, .slick-next {
+    top: 40%;
+}
+
+.slick-next {
+    right: -15px;
+}
+
+ul.sport-menu {
+    li{
+        min-height: 20px;
+    }
+    li > a {
+        color: $secondColor;
+        text-transform: uppercase;
+        width: 100%;
+        line-height: 20px;
+    }
+    li > a:hover, li > a:focus {
+        background-color: $fourthColor;
+        border-color: $primaryBackgroundHoverColor;
+        text-decoration: none;
+        color: $secondColor;
+    }
+    padding: 0;
+}

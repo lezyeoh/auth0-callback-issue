@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Default Stuff -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+  <title>Sportanatics</title>
+  <base href="/#">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Links -->
+  <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="/client/build/css/all.min.css">
+
+</head>
+
+<body ng-app="sportsFinder">
+  <alertmessage></alertmessage>
+  <header role="banner" class="text-center">
+    <toolbar></toolbar>
+  </header>
+  <div ui-view></div>
+  <footer>
+    <div style="height: 100px;"></div>
+  </footer>
+  <!--jQuery-->
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js'></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Angular-->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-messages.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+
+  <script type="text/javascript" src="/bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?libraries=places&key=XXXX"></script>
+  <script type="text/javascript" src="/bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+  <script type="text/javascript" src="/bower_components/moment/moment.js"></script>
+  <script type="text/javascript" src="/bower_components/angular-moment/angular-moment.js"></script>
+  <script type="text/javascript" src="/bower_components/angular-smart-table/dist/smart-table.min.js"></script>
+  <script type="text/javascript" src="/bower_components/slick-carousel/slick/slick.js"></script>
+  <script type="text/javascript" src="/bower_components/angular-slick-carousel/dist/angular-slick.min.js"></script>
+  <script type="text/javascript" src="/bower_components/angular-spinners/dist/angular-spinners.min.js"></script>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.0/moment-timezone.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.20/pdfmake.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+  <script type="text/javascript" src="https://cdn.rawgit.com/auth0/angular-storage/master/dist/angular-storage.js"></script>
+  
+
+  <script src="/bower_components/auth0-lock/build/lock.js"></script>
+  <script src="/bower_components/angular-lock/dist/angular-lock.js"></script>
+  <script src="/bower_components/angular-jwt/dist/angular-jwt.js"></script>
+  <!-- Auth Libraries-->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/satellizer/0.12.5/satellizer.min.js"></script>
+
+  <script type="text/javascript" src="/client/build/js/all.min.js"></script>
+  <script>
+    var AUTH0_CLIENT_ID='undefined'; 
+    var AUTH0_DOMAIN='undefined'; 
+    var AUTH0_CALLBACK_URL=location.href;
+  </script>
+
+</body>
+
+</html>

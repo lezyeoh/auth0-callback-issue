@@ -1,0 +1,122 @@
+@import 'colors.base';
+
+/* overrides */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $secondColor;
+  margin-bottom: 18px;
+}
+
+.alert {
+  margin-bottom: 0;
+}
+
+/*------------------*/
+html, .wrapper {
+  height: 100%;
+}
+
+body {
+  background: $backgroundColor;
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.auth-title {
+  color: $darkPrimaryColor;
+  margin: 1em 0 1em;
+}
+
+#nprogress .bar {
+  background: white !important;
+}
+
+/* Social network styles */
+.social-picture {
+  width: 50px;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+
+.linked-social {
+  color: white !important;
+  cursor: auto !important;
+}
+
+.linked-social h5, .linked-social p {
+  color: white !important;
+  margin: 0;
+}
+
+.linked-phone {
+  cursor: auto !important;
+}
+
+.linked-google, .linked-google:hover {
+  background: $googleColor !important;
+}
+
+.linked-twitter, .linked-twitter:hover {
+  background: $twitterColor !important;
+}
+
+.linked-facebook, .linked-facebook:hover {
+  background: $facebookColor !important;
+}
+
+/* Forms */
+.input-field label.active {
+  font-size: 14px;
+}
+
+.input-field label {
+  font-size: 14px;
+}
+
+h4 {
+  color: #acacac;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  transform: uppercase;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #232323;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.eventImage{
+    position:relative;
+}
+
+.post-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
+pre{
+    white-space: pre-wrap;
+}
+
+p {
+  font-size: 16px;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    .page-break {
+      page-break-after: always !important;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../common/colors.base';
+.homenav {
+  background: $firstColor;
+  min-height: 75px;
+  height: 75px;
+  line-height: 75px;
+    
+  .navbar-nav > li > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: $fourthColor;
+    color: white;
+    border-color: $primaryBackgroundHoverColor;
+    text-decoration: none;
+  }
+  
+  ul.dropdown-menu li {
+    line-height: 40px;
+  }
+}
